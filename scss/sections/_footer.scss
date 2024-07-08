@@ -1,0 +1,10 @@
+.footer {
+    border-top: 2px solid $grey-light-2;
+
+    &__text {
+        font-size: $size-card-title;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 17px;
+    }
+}

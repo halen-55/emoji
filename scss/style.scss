@@ -1,0 +1,9 @@
+// Base
+
+@import 'base/config';   /* сброс всех стилей */
+@import 'base/vars';     /* определили переменные */
+@import 'base/base';     /* базовые настройки scss */
+@import 'base/layout';
+@import 'sections/header';
+@import 'sections/emoji';
+@import 'sections/footer';

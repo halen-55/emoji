@@ -1,0 +1,46 @@
+.emoji {
+
+    &__wrapper {
+        padding: 0 20px;
+        margin-bottom: 48px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+
+    &-card {
+        width: 268px;
+        border: 2px solid $grey-light-2;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $white;
+
+        &__title {
+            font-size: 50px;
+            padding-top: 24px;
+            padding-bottom: 18px;
+        }
+
+        &__subtitle {
+            font-size: $size-card-title;
+            font-weight: $font-weight-bold;
+            text-decoration: underline;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: $size-card-text;
+            padding-top: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 24px;
+
+            @media (max-width: 470px) {
+                padding: 14;
+            }
+        }
+    }
+}

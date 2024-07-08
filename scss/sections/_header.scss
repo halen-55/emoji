@@ -1,0 +1,78 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, $liner, $linear-light);
+    padding-top: 64px;
+    padding-bottom: 5;
+    color: $blue-light;
+    align-items: center;
+    margin-bottom: 80px;
+
+    @media (max-width: 470px) {
+        padding-top: 35px;
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        font-size: $size-title;
+        font-weight: $font-weight-bold;
+        text-shadow: 1px 1px 1px #000;
+        padding-left: 15px;
+
+        @media (max-width: 470px) {
+            font-size: $size-title-min;
+        }
+
+    }
+
+    &__text {
+        font-weight: $font-weight-bold;
+        font-size: $size-subtitle;
+        padding-bottom: 68px;
+
+        @media (max-width: 470px) {
+            padding-bottom: 35px;
+            font-size: $size-subtitle-min;
+        }
+    }
+}
+
+.form {
+    position: absolute;
+    padding: 20px 32px;
+    width: 820px;
+    border: 2px solid $grey-light-2;
+    border-radius: 10px;
+    background-color: $white;
+    bottom: 0;
+    transform: translate(0%, 50%);
+    color: $grey;
+    
+    @media (max-width: 888px) {
+        max-width: 400px;
+    }
+    
+    @media (max-width: 470px) {
+        max-width: 250px;
+        padding: 10px;
+    }
+    
+}
+
+.form__input {
+    width: 100%;
+}
+
+input::placeholder {
+    font-size: $size-placeholder;
+    color: $grey-light-2;
+    @media (max-width: 888px) {
+        font-size: $size-placeholder-medium;
+    }
+    
+    @media (max-width: 470px) {
+        font-size: $size-placeholder-min;
+    }
+    
+}
