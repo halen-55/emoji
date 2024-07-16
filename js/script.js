@@ -38,13 +38,22 @@ import { emojis } from "../js/emojis.js";
     h2.textContent = title;
     const p = document.createElement("p");
     p.classList.add("emoji-card__text");
-    p.textContent = keywords;
+    p.textContent = uniqKeywords(keywords);
 
     div.appendChild(img);
     div.appendChild(h2);
     div.appendChild(p);
     return div;
   }
+
+  // uniqKeywords
+  function uniqKeywords (keywords) {
+    const strKeywordsToArray = keywords.split(' ');
+    const uniqArrayKeywords = [... new Set(strKeywordsToArray)];
+    const uniqStrKeywords = uniqArrayKeywords.join(' ')
+    //console.log(uniqStrKeywords);
+    return uniqStrKeywords;
+  };
 
   const form = document.getElementById("form");
   const input = document.getElementById("input");
